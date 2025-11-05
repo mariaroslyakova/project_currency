@@ -28,6 +28,7 @@ dict = write_rows_to_csv(filename, rows)
 
 
 st.title("Конвертер валют")
+st.write("По актуальному курсу ЦБ РФ")
 x = st.number_input("Сумма", min_value=0.0, value=1.0, step=1.0)
 input = st.selectbox("Из", list(dict.keys()))
 output = st.selectbox("В", list(dict.keys()))
