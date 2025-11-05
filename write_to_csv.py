@@ -6,7 +6,7 @@ def write_rows_to_csv(filename, rows):
         # Создаем объект для записи данных в csv
         writer = csv.writer(file)
         # Запись первой строки с названием колонн
-        writer.writerow(['№','Цифровой код','Буквенный код','Единиц','Валюта','Курс'])
+        writer.writerow(['Цифровой код','Буквенный код','Единиц','Валюта','Курс'])
         dict = {}
         for row in rows:
             cols = []
